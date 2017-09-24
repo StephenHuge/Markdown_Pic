@@ -23,7 +23,7 @@ public class MyGradeCalculator {
         
         System.out.println("credits:" + calculateCredit(grades));
         System.out.println("courses: " + grades.size());
-        System.out.println("points: " + String.format("%.2f", ans));
+        System.out.println("GPA: " + String.format("%.2f", ans));
     }
     // store the data
     private static void store(String input, Grade g, ArrayList<Grade> grades) {
@@ -94,9 +94,5 @@ public class MyGradeCalculator {
     static class Grade {
         double credit; 
         int score;
-        @Override
-        public String toString() {
-            return "Grade [credit=" + credit + ", score=" + score + "]";
-        }
     }
 }
